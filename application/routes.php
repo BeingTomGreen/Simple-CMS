@@ -127,7 +127,6 @@ Route::get('control/category/list', array(
 	'as' => 'admin_category_list',
 	'uses' => 'category@admin_list'
 ));
-
 Route::any('control/category/edit/(:any)', array(
 	'before' => 'auth',
   	'as' => 'admin_category_edit',
@@ -142,6 +141,28 @@ Route::any('control/category/delete/(:any)', array(
 	'before' => 'auth',
   'as' => 'admin_category_delete',
 	'uses' => 'category@admin_delete'
+));
+
+/** User(s) Routes **/
+Route::get('control/user/list', array(
+  'before' => 'auth',
+  'as' => 'admin_user_list',
+  'uses' => 'user@admin_list'
+));
+Route::any('control/user/edit/(:any)', array(
+  'before' => 'auth',
+    'as' => 'admin_user_edit',
+  'uses' => 'user@admin_edit'
+));
+Route::any('control/user/add', array(
+  'before' => 'auth',
+  'as' => 'admin_user_add',
+  'uses' => 'user@admin_add'
+));
+Route::any('control/user/delete/(:any)', array(
+  'before' => 'auth',
+  'as' => 'admin_user_delete',
+  'uses' => 'user@admin_delete'
 ));
 
 /*

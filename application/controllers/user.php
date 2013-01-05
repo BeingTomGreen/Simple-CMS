@@ -6,13 +6,13 @@ class User_Controller extends Base_Controller {
   public $restful = true;
 
   //The number of users to display per page
-  public $perPage = 5;
+  public $perPage = 15;
 
   //Setup our validation rules
   private $rules = array(
     'id' => 'numeric',
   );
-
+/*
   //List blog posts for the public
   public function get_list() {
     //Grab all of the users which are set as 'viewable'
@@ -59,23 +59,23 @@ class User_Controller extends Base_Controller {
       return Response::error('404');
     }
   }
-
-  //Display a list of posts to the admin
+*/
+  //Display a list of users to the admin
   public function get_admin_list() {
-    //Grab all blog posts
-    $posts = Post::paginate($this->perPage);
+    //Grab all users posts
+    $users = User::paginate($this->perPage);
 
     //Create a data array
     $data = array(
-      'section' => 'post',
-      'pageTitle' => 'Blog Post List',
-      'posts' => $posts,
+      'section' => 'user',
+      'pageTitle' => 'Blog User List',
+      'users' => $users,
     );
 
     //Build the view
-    return View::make('admin.post.list', $data);
+    return View::make('admin.user.list', $data);
   }
-
+/*
   //Display an edit page for the  post to the admin
   public function get_admin_edit($slug) {
     //Search for a post matching the slug
@@ -270,4 +270,5 @@ class User_Controller extends Base_Controller {
       ;
     }
   }
+*/
 }

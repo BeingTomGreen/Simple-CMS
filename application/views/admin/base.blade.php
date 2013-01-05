@@ -50,8 +50,8 @@
               <li class="dropdown @if ($section == 'user') active @endif">
                 <a href="" class="dropdown-toggle" data-toggle="dropdown">User System <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="{{ URL::to_route('admin_post_list') }}">Manage Users</a></li>
-                  <li><a href="{{ URL::to_route('admin_post_add') }}">Add User</a></li>
+                  <li><a href="{{ URL::to_route('admin_user_list') }}">Manage Users</a></li>
+                  <li><a href="{{ URL::to_route('admin_user_add') }}">Add User</a></li>
                 </ul>
               </li>
             </ul>
