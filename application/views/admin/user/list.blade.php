@@ -17,9 +17,9 @@
       <td><a href='{{ URL::to_route('admin_user_edit', array($user->username)) }}'>{{ $user->username }}</td>
       <td>{{ $user->email }}</td>
       @if ($user->activated == 1)
-          <td>Yes</td>
+      <td>Yes</td>
       @else
-          <td>No</td>
+      <td>No</td>
       @endif
       <td>{{ $user->last_login }}</td>
       <td class="action-td">
