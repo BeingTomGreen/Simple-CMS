@@ -29,7 +29,6 @@
           <a class="brand" href="{{ URL::to_route('admin_dashboard') }}">Admin Dashboard</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="divider-vertical"></li>
               <li class="dropdown @if ($section == 'page') active @endif">
                 <a href="" class="dropdown-toggle" data-toggle="dropdown">Page System <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -48,18 +47,28 @@
                   <li><a href="{{ URL::to_route('admin_category_add') }}">Add Blog Category</a></li>
                 </ul>
               </li>
+              <li class="dropdown @if ($section == 'user') active @endif">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">User System <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="{{ URL::to_route('admin_post_list') }}">Manage Users</a></li>
+                  <li><a href="{{ URL::to_route('admin_post_add') }}">Add User</a></li>
+                </ul>
+              </li>
             </ul>
 
             <ul class="nav pull-right">
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://static.googleusercontent.com/external_content/untrusted_dlcp/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf">Google's SEO Starter Guide</a></li>
+                </ul>
+              </li>
               <li class="divider-vertical"></li>
               <li class="dropdown">
                 <a href="" class="dropdown-toggle" data-toggle="dropdown">{{ ucwords(Auth::user()->username) }} <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <!--
-                  /* TODO - */
                   <li><a href="#">Modify Account</a></li>
                   <li class="divider"></li>
-                  -->
                   <li><a href="{{ URL::to_route('logout') }}">Logout</a></li>
                 </ul>
               </li>
