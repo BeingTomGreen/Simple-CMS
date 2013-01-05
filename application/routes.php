@@ -117,20 +117,20 @@ Route::any('control/page/add', array(
 ));
 Route::any('control/page/delete/(:any)', array(
 	'before' => 'auth',
-  'as' => 'admin_page_delete',
+	'as' => 'admin_page_delete',
 	'uses' => 'page@admin_delete'
 ));
 
 /** Category(Categories) Routes **/
 Route::get('control/category/list', array(
 	'before' => 'auth',
-  'as' => 'admin_category_list',
+	'as' => 'admin_category_list',
 	'uses' => 'category@admin_list'
 ));
 
 Route::any('control/category/edit/(:any)', array(
 	'before' => 'auth',
-  'as' => 'admin_category_edit',
+  	'as' => 'admin_category_edit',
 	'uses' => 'category@admin_edit'
 ));
 Route::any('control/category/add', array(

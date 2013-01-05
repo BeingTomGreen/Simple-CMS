@@ -8,10 +8,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <!-- Le styles -->
-    {{ HTML::style('admin/css/bootstrap.css?'. time()) }}
-    {{ HTML::style('admin/css/bootstrap-responsive.css?'. time()) }}
-    {{ HTML::style('admin/css/font-awesome.css?'. time()) }}
-    {{ HTML::style('admin/css/custom.css?'. time()) }}
+    {{ HTML::style('backend/css/bootstrap.css?'. time()) }}
+    {{ HTML::style('backend/css/bootstrap-responsive.css?'. time()) }}
+    {{ HTML::style('backend/css/font-awesome.css?'. time()) }}
+    {{ HTML::style('backend/css/custom.css?'. time()) }}
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

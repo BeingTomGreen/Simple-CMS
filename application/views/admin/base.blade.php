@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
-    {{ HTML::style('admin/css/bootstrap.css?'. time()) }}
-    {{ HTML::style('admin/css/bootstrap-responsive.css?'. time()) }}
-    {{ HTML::style('admin/css/font-awesome.css?'. time()) }}
-    {{ HTML::style('admin/css/custom.css?'. time()) }}
+    {{ HTML::style('backend/css/bootstrap.css?'. time()) }}
+    {{ HTML::style('backend/css/bootstrap-responsive.css?'. time()) }}
+    {{ HTML::style('backend/css/font-awesome.css?'. time()) }}
+    {{ HTML::style('backend/css/custom.css?'. time()) }}
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -29,15 +29,16 @@
           <a class="brand" href="{{ URL::to_route('admin_dashboard') }}">Admin Dashboard</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
+              <li class="divider-vertical"></li>
               <li class="dropdown @if ($section == 'page') active @endif">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page System <b class="caret"></b></a>
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">Page System <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="{{ URL::to_route('admin_page_list') }}">Manage Pages</a></li>
                   <li><a href="{{ URL::to_route('admin_page_add') }}">Add Page</a></li>
                 </ul>
               </li>
               <li class="dropdown @if ($section == 'post') active @endif">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog System <b class="caret"></b></a>
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">Blog System <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="{{ URL::to_route('admin_post_list') }}">Manage Blog Posts</a></li>
                   <li><a href="{{ URL::to_route('admin_post_add') }}">Add Blog Post</a></li>
@@ -48,9 +49,21 @@
                 </ul>
               </li>
             </ul>
-            <p class="navbar-text pull-right">
-              Logged in as {{ Auth::user()->username }}
-            </p>
+
+            <ul class="nav pull-right">
+              <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">{{ ucwords(Auth::user()->username) }} <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <!--
+                  /* TODO - */
+                  <li><a href="#">Modify Account</a></li>
+                  <li class="divider"></li>
+                  -->
+                  <li><a href="{{ URL::to_route('logout') }}">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -86,6 +99,6 @@
     <!-- Le javascript
     ================================================== -->
     {{ HTML::script('http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js') }}
-    {{ HTML::script('admin/javascript/bootstrap.js') }}
+    {{ HTML::script('backend/javascript/bootstrap.js?'. time()) }}
   </body>
 </html>

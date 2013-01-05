@@ -1,5 +1,6 @@
 @layout('public.base')
 
 @section('content')
-    {{ $pageContent }}
+	<h3>{{ $pageTitle }}</h2>
+	{{ $pageContent }}
 @endsection

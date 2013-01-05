@@ -42,8 +42,6 @@ class Category_Controller extends Base_Controller {
     }
   }
 
-
-
   //Display a list of categories to the admin
   public function get_admin_list() {
     //Grab all blog posts
