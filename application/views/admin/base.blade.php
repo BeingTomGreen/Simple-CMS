@@ -108,6 +108,6 @@
     <!-- Le javascript
     ================================================== -->
     {{ HTML::script('http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js') }}
-    {{ HTML::script('backend/javascript/bootstrap.js') }}
+    {{ HTML::script('backend/js/bootstrap.js') }}
   </body>
 </html>
