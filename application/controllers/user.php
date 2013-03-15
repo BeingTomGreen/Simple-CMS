@@ -75,30 +75,31 @@ class User_Controller extends Base_Controller {
     //Build the view
     return View::make('admin.user.list', $data);
   }
-/*
-  //Display an edit page for the  post to the admin
-  public function get_admin_edit($slug) {
-    //Search for a post matching the slug
-    $post = Post::where_slug($slug)->first();
 
+  //Display an edit page for the  user to the admin
+  public function get_admin_edit($slug) {
+    //Search for a user matching the slug
+    $user = User::where_slug($slug)->first();
+
+    /** TODO Grab Groups?
     //Grab the categories
     $categories = array();
     foreach (Category::get() as $category) {
       $categories[$category->id] = $category->title;
     }
+    */
 
     //If we find results
-    if(!is_null($post)) {
+    if(!is_null($user)) {
       //Set up data to be passed to the view
       $data = array(
-        'section' => 'post',
-        'pageTitle' => 'Edit Blog Post: '. $post->reference,
-        'post' => $post,
-        'categories' => $categories,
+        'section' => 'user',
+        'pageTitle' => 'Edit User: '. $user->username,
+        'user' => $user,
       );
 
       //Build the view
-      return View::make('admin.post.form', $data);
+      return View::make('admin.user.form', $data);
     }
     //No blog post found
     else {
@@ -106,7 +107,7 @@ class User_Controller extends Base_Controller {
       return Response::error('404');
     }
   }
-
+/*
   //Display a list of posts to the admin
   public function post_admin_edit($slug) {
     //Grab the input from the form
