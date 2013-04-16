@@ -6,9 +6,8 @@ A simple, easy to use CMS based on the [Laravel 3 Framework](http://laravel.com)
 - Blog system (with Categories)
 - Page System
 - An easy to use Content Managment System
-- Basic SEO features built in
 
-## Upcoming Features
+## Unfinished Features
 - User system (with different roles/permissions)
 
 ## Development
