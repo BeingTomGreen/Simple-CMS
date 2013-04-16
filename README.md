@@ -5,13 +5,15 @@ A simple, easy to use CMS based on the [Laravel 3 Framework](http://laravel.com)
 ## Feature Overview
 - Blog system (with Categories)
 - Page System
-- An easy to use Content Managment System
 
 ## Unfinished Features
 - User system (with different roles/permissions)
+- Settings (for things like Site Title which currently exists as a placeholder in the front-end template)
 
 ## Development
-This project has been superseded by the newer version built on [Laravel Four](http://four.laravel.com). I may continue to make bug fixes.
+This project has been superseded by the newer version built on [Laravel Four](http://four.laravel.com). I may continue to make bug fixes. It remains online purely for my reference, and probably ignores many 'best practices'.
+
+If sombody would like to develop this further please feel free.
 
 ## Installation
 - Copy the contents to your web server
