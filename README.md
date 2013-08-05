@@ -7,7 +7,7 @@ A simple, easy to use CMS based on the [Laravel 3 Framework](http://laravel.com)
 - Page System
 
 ## Unfinished Features
-- User system (with different roles/permissions)
+- User system (with different roles/permissions) - you can't even change your password at the minute..
 - Settings (for things like Site Title which currently exists as a placeholder in the front-end template)
 
 ## Development
@@ -16,7 +16,7 @@ This project has been superseded by the newer version built on [Laravel Four](ht
 If sombody would like to develop this further please feel free.
 
 ## Installation
-- Copy the contents to your web server
+- Copy the contents to your web server (suggest using SSH)
 - Configure your [Apache VirtualHost](http://laravel.com/docs/install#server-configuration) to send all HTTP requests to /public
 - Generate an [application key](http://laravel.com/docs/install#basic-configuration). The easiest way to do this is via the Command Line: [php artisan key:generate](http://laravel.com/docs/artisan/commands#application-configuration)
 - Set up your database connection (application/config/database.php)
