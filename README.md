@@ -10,7 +10,7 @@ Links to the L3 documentation may not work now that v4 is the stable release.
 
 ## Unfinished Features
 - User system (with different roles/permissions) - you can't even change your password at the minute..
-- Settings (for things like Site Title which currently exists as a placeholder in the front-end template)
+- Settings
 
 ## Development
 This project has been superseded by the newer version built on [Laravel Four](http://four.laravel.com). I may continue to make bug fixes. It remains online purely for my reference, and probably ignores many 'best practices'.
