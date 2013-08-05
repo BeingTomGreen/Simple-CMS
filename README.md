@@ -2,6 +2,8 @@
 
 A simple, easy to use CMS based on the [Laravel 3 Framework](http://laravel.com).
 
+Links to the L3 documentation may not work now that v4 is the stable release.
+
 ## Feature Overview
 - Blog system (with Categories)
 - Page System
