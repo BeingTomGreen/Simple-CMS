@@ -35,4 +35,4 @@ simpleCMS will not function correctly when using Cookies as the Session Driver d
 
 ## License
 
-simpleCMS is open-sourced software licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License). You are free to use this however you want (including comercial use). That said, I would love to hear how people are using it, so feel free to [drop me an email](mailto:tom@beingtomgreen.com) and tell me how you are using it and what you think!
+simpleCMS is open-sourced software licensed under the [MIT License](http://beingtomgreen.mit-license.org/). You are free to use this however you want (including comercial use). That said, I would love to hear how people are using it, so feel free to [drop me an email](mailto:tom@beingtomgreen.com) and tell me how you are using it and what you think!
